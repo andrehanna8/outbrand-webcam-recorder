@@ -1,0 +1,51 @@
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333; /* Dark gray background */
+  }
+  
+  .photos-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-right: 20px;
+  }
+  
+  .photo-thumbnail img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Rounded corners for thumbnails */
+  }
+  
+  .camera-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #444; /* Slightly lighter gray for contrast */
+    padding: 20px;
+    border-radius: 10px; /* Rounded rectangle for the camera container */
+  }
+  
+  .camera-container video {
+    border-radius: 5px; /* Rounded corners for the video element */
+  }
+  
+  .camera-container button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #666; /* Darker button for aesthetic */
+    color: white;
+  }
+  
+  .captured-photo img {
+    display: none; /* Hide the single captured photo, as requested */
+  }
+  

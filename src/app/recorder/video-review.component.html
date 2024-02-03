@@ -1,0 +1,8 @@
+<!-- video-review.component.html -->
+<div *ngIf="videoSrc">
+    <video #videoElement controls [src]="videoSrc"></video>
+    <button (click)="onRedo()">Redo</button>
+    <button (click)="videoElement.play()">Play</button>
+    <button (click)="onConfirm(videoElement.mozCaptureStream ? videoElement.mozCaptureStream() : videoElement.captureStream())">Confirm</button>
+  </div>
+  

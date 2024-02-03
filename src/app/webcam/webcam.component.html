@@ -1,0 +1,12 @@
+<div class="webcam-container">
+    <ngx-webcam [height]="720" [width]="1280" [videoOptions]="videoOptions"
+                [trigger]="triggerObservable" (imageCapture)="handleImage($event)"
+                [allowCameraSwitch]="allowCameraSwitch" [deviceId]="deviceId"
+                (cameraSwitched)="cameraWasSwitched($event)" (initError)="handleInitError($event)">
+    </ngx-webcam>
+    <button (click)="triggerSnapshot()">Captureg</button>
+    <div *ngIf="webcamImage">
+      <img [src]="webcamImage.imageAsDataUrl"/>
+    </div>
+  </div>
+  
